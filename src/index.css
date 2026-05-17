@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Jost:wght@300;400;500;600&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-serif: "Cormorant Garamond", serif;
+  --font-sans: "Jost", sans-serif;
+
+  --color-green-dark: #1A2E1F;
+  --color-green-mid: #2D4A35;
+  --color-green-soft: #4A7C59;
+  --color-green-mist: #D4E4D8;
+  --color-cream: #F5EFE4;
+  --color-cream-dark: #EDE4D3;
+  --color-brown: #8B6340;
+  --color-brown-light: #C4A882;
+  --color-gold: #B89355;
+  --color-white: #FDFAF6;
+  
+  --animate-float: float 6s ease-in-out infinite;
+  --animate-fade-in: fadeIn 0.8s ease-out forwards;
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+body {
+  @apply font-sans bg-white text-gray-900 overflow-x-hidden;
+}
+
+h1, h2, h3, h4, .font-serif {
+  @apply font-serif;
+}
+
+.section-reveal {
+  @apply opacity-0 translate-y-8 transition-all duration-700 ease-out;
+}
+
+.reveal-visible {
+  @apply opacity-100 translate-y-0;
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #2D4A35;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #1A2E1F;
+}

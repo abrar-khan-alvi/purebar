@@ -1,0 +1,6 @@
+{
+  "name": "PureBar Soaps – Nature's Finest",
+  "description": "A premium, nature-inspired e-commerce destination for handcrafted artisanal soaps and botanical skincare.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
